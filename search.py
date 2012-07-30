@@ -20,7 +20,6 @@ class MainApp(QtGui.QMainWindow, main_window.Ui_MainWindow):
         self.actionSettings.triggered.connect(self.show_settings_diag)
         self.results = defaultdict(list)
         self.listWidgetResults.itemClicked.connect(self.item_clicked)
-        self.listWidgetResults.alternatingRowColors()
         one_off_timer = QTimer()
         one_off_timer.singleShot(1, self.do_a_search)
 
